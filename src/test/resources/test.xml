@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Framework Test" parallel="tests" thread-count="6"
+	data-provider-thread-count="2">
+	<parameter name="config-file" value="testconfig.properties" />
+	<test name="Test1" enabled="true">
+		<parameter name="platform-type" value="ie" />
+		<parameter name="feature"
+			value="src/test/resources/features/first.feature" />
+		<classes>
+			<class name="testng.CukesTest">
+				<methods>
+					<include name="scenario" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="Test2" enabled="true">
+		<parameter name="platform-type" value="ie" />
+		<parameter name="feature"
+			value="src/test/resources/features/second.feature" />
+		<classes>
+			<class name="testng.CukesTest">
+				<methods>
+					<include name="scenario" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test3" enabled="true">
+		<parameter name="platform-type" value="ie" />
+		<parameter name="feature"
+			value="src/test/resources/features/third.feature" />
+		<classes>
+			<class name="testng.CukesTest">
+				<methods>
+					<include name="scenario" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test4" enabled="true">
+		<parameter name="platform-type" value="ie" />
+		<parameter name="feature"
+			value="src/test/resources/features/fourth.feature" />
+		<classes>
+			<class name="testng.CukesTest">
+				<methods>
+					<include name="scenario" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+</suite>
