@@ -9,29 +9,8 @@
 		<cucumber.options>--plugin html:target/cucumber --tags @wip,@foo --features src/test/resources/features</cucumber.options>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>cc0312dd18a9-releases</name>
-			<url>https://artifactory.service.edp.t-mobile.com/artifactory/tmo-releases</url>
-		</repository>
-		<repository>
-			<id>central2</id>
-			<name>bintray</name>
-			<url>http://jcenter.bintray.com</url>
-		</repository>
-		<repository>
-			<id>snapshots</id>
-			<name>cc0312dd18a9-snapshots</name>
-			<url>https://artifactory.service.edp.t-mobile.com/artifactory/tmo-snapshots</url>
-		</repository>
-	</repositories>
 	<dependencies>
-		<dependency>
-			<groupId>com.tmobile.eqm.testfrwk.common</groupId>
-			<artifactId>core_framework</artifactId>
-			<version>1.5.4-RELEASE</version>
-		</dependency>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
